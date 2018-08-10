@@ -1,21 +1,26 @@
 package me.rjdavis.equi;
 
-import java.util.List;
-
 public class EquilibriumIndex {
 
 	private EquilibriumIndex() {
 
 	}
 
-	public static int find(List<Integer> list) {
+	public static int find(final int[] list) {
 		long prefixSum = 0;
-		for (int i = 0; i < list.size(); i++) {
+		final int size = list.length;
+		for (int i = 0; i < size; i++) {
 			if (i > 0) {
-				prefixSum += list.get(i - 1);
+				prefixSum += list[i - 1];
 			}
-			final long suffixSum = (i == list.size() - 1) ? 0
-					: list.subList(i + 1, list.size()).stream().mapToLong(Long::valueOf).sum();
+
+			long suffixSum = 0;
+			if (i < size - 1) {
+				for (int j = i + 1; j < size; j++) {
+					suffixSum += list[j];
+				}
+			}
+
 			if (prefixSum == suffixSum) {
 				return i;
 			}
