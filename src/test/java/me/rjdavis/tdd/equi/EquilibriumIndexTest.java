@@ -1,6 +1,7 @@
-package me.rjdavis.equi;
+package me.rjdavis.tdd.equi;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -96,7 +97,7 @@ public class EquilibriumIndexTest {
 	}
 
 	@Test
-	public void givenListWithOneHundredThousandIndexesAllSetToNegativeOneWhenFindingEquiIndexThenReturnNegativeOne()
+	public void givenListWithOneHundredThousandIndexesAllSetToNegativeOneWhenFindingEquiIndexThenReturnNegativeOneInLessThanFiveSeconds()
 			throws Exception {
 		final int[] list = IntStream.generate(() -> -1).limit(100000).boxed().collect(Collectors.toList()).stream()
 				.mapToInt(Integer::intValue).toArray();
@@ -107,8 +108,8 @@ public class EquilibriumIndexTest {
 		final long runtime = timeAfterExecution - timeBeforeExecution;
 
 		assertEquals(-1, actualEquiIndex);
-		final int maximumRuntime = 1000;
-		assertEquals(String.format("Execution took %d ms. Time limit is %d ms.", runtime, maximumRuntime),
+		final int maximumRuntime = 5000;
+		assertFalse(String.format("Execution took %d ms. Time limit is %d ms.", runtime, maximumRuntime),
 				runtime > maximumRuntime);
 	}
 

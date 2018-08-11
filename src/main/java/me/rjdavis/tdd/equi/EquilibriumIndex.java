@@ -1,4 +1,4 @@
-package me.rjdavis.equi;
+package me.rjdavis.tdd.equi;
 
 public class EquilibriumIndex {
 
@@ -15,10 +15,8 @@ public class EquilibriumIndex {
 			}
 
 			long suffixSum = 0;
-			if (i < size - 1) {
-				for (int j = i + 1; j < size; j++) {
-					suffixSum += list[j];
-				}
+			for (int j = i + 1; j < size; j++) {
+				suffixSum += list[j];
 			}
 
 			if (prefixSum == suffixSum) {

@@ -1,6 +1,15 @@
-# Equi
+# TDD Solutions Java
 
+Various TDD implementations of simple problems.
+
+## Projects
+
+### Equi
 Find an index in an array such that its prefix sum equals its suffix sum.
+
+https://app.codility.com/public-report-detail/
+
+
 
 ## Building from source
 
