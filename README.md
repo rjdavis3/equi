@@ -2,6 +2,10 @@
 
 Various TDD implementations of simple problems.
 
+| Service   | Develop | Master |
+|-----------|---------|--------|
+| CI Status | [![Build Status](https://travis-ci.org/rjdavis3/tdd-solutions-java.svg?branch=develop)](https://travis-ci.org/rjdavis3/tdd-solutions-java) | [![Build Status](https://travis-ci.org/rjdavis3/tdd-solutions-java.svg?branch=master)](https://travis-ci.org/rjdavis3/tdd-solutions-java) |
+
 ## Projects
 
 ### Equi
