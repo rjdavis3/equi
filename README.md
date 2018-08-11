@@ -13,7 +13,9 @@ Find an index in an array such that its prefix sum equals its suffix sum.
 
 https://app.codility.com/public-report-detail/
 
-### Smallest Int
+### Missing Integer
+Find the smallest positive integer that does not occur in a given sequence.
+
 Write a function:
 
 class Solution { public int solution(int[] A); }
@@ -29,11 +31,13 @@ Given A = [-1, -3], the function should return 1.
 Assume that:
 
 N is an integer within the range [1..100,000];
-each element of array A is an integer within the range [−1,000,000..1,000,000].
+each element of array A is an integer within the range [-1,000,000..1,000,000].
 Complexity:
 
 expected worst-case time complexity is O(N);
 expected worst-case space complexity is O(N) (not counting the storage required for input arguments).
+
+https://app.codility.com/demo/results/demo4JQ3G6-97A/
 
 ## Building from source
 

@@ -1,9 +1,9 @@
-package me.rjdavis.tdd.smallestint;
+package me.rjdavis.tdd.missinginteger;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class SmallestInt {
+public class MissingInteger {
 
 	public int solution(int[] A) {
 

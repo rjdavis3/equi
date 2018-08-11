@@ -78,7 +78,7 @@
 							<goal>mutationCoverage</goal>
 						</goals>
 						<configuration>
-							<mutationThreshold>98</mutationThreshold>
+							<mutationThreshold>84</mutationThreshold>
 							<targetClasses>
 								<param>me.rjdavis.*</param>
 							</targetClasses>
