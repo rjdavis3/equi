@@ -9,8 +9,6 @@ Find an index in an array such that its prefix sum equals its suffix sum.
 
 https://app.codility.com/public-report-detail/
 
-
-
 ## Building from source
 
 	1. Install Maven
