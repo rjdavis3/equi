@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.rjdavis</groupId>
 	<artifactId>tdd-solutions-java</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 
 	<name>TDD Solutions Java</name>
 	<description>Various TDD implementations of simple problems.</description>
@@ -78,7 +78,7 @@
 							<goal>mutationCoverage</goal>
 						</goals>
 						<configuration>
-							<mutationThreshold>98</mutationThreshold>
+							<mutationThreshold>84</mutationThreshold>
 							<targetClasses>
 								<param>me.rjdavis.*</param>
 							</targetClasses>
